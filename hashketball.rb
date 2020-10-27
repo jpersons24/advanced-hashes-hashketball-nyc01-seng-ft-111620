@@ -204,4 +204,4 @@ def player_stats(player)
   end
   player_statistics
 end
-binding.pry
+# binding.pry

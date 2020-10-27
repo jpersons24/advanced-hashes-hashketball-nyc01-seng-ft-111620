@@ -138,8 +138,15 @@ def get_all_players
 end
 # binding.pry
 
-def charlotte_players
+def charlotte_numbers
   game_hash[:away][:players].collect do |hash|
+    hash[:number]
+  end
+end
+# binding.pry
+
+def brooklyn_numbers
+  game_hash[:home][:players].collect do |hash|
     hash[:number]
   end
 end

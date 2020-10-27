@@ -210,3 +210,4 @@ end
 def big_shoe_rebounds
   get_all_players[:shoe].max
 end
+binding.pry

@@ -139,7 +139,7 @@ end
 # binding.pry
 
 def charlotte_players
-  char_players = game_hash[:away].values.colect do |key, value|
+  char_players = game_hash[:away].values.collect do |key, value|
     key[:players]
   end
   char_players

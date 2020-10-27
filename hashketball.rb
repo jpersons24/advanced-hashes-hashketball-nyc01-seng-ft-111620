@@ -208,6 +208,16 @@ end
 
 
 def big_shoe_rebounds
-  get_all_players[:shoe].max
+  big_shoes_guy = 0
+  rebounds = 0
+    game_hash.each do |team, team_details|
+      team_details[:players].each do |stats|
+        if stats[:shoe] > big_shoes_guy
+          big_shoes_guy = stats[:shoe]
+          rebounds = stats[:rebounds]
+        end
+      end
+    end
+    rebounds
 end
 # binding.pry

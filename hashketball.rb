@@ -192,3 +192,15 @@ def player_numbers(team_name)
   end
 end
 # binding.pry
+
+def player_stats(player)
+  game_hash.each do |team, data|
+    data.select do |key, value|
+      if value[:player_name] == player
+        stat_index = index(value[:player_name])
+        player_stats = value[stat_index]
+      end
+    end
+  end
+  player_stats
+end

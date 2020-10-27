@@ -150,7 +150,7 @@ def brooklyn_numbers
     hash[:number]
   end
 end
-binding.pry
+# binding.pry
 
 def num_points_scored(player_name)
   get_all_players.each do |player|

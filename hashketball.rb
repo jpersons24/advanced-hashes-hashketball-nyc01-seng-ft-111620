@@ -197,10 +197,10 @@ def player_stats(player)
   game_hash.each do |team, team_details|
     team_details[:players].collect do |stats|
       if stats[:name] == player
-        player_stats = stats
+        stats
       end
     end
   end
-  player_stats
+  stats
 end
 binding.pry

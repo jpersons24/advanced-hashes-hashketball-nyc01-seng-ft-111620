@@ -140,7 +140,7 @@ end
 
 def charlotte_players
   char_players = game_hash[:away].values.collect do |key, value|
-    key[:players]
+    key
   end
   char_players
 end

@@ -205,3 +205,8 @@ def player_stats(player)
   player_statistics
 end
 # binding.pry
+
+
+def big_shoe_rebounds
+  get_all_players[:shoe].max
+end

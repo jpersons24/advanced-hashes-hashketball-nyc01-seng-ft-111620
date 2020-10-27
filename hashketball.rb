@@ -139,8 +139,10 @@ end
 # binding.pry
 
 def charlotte_players
-  char_players = game_hash[:away].values.collect do |key, value|
-    key
+  char_players = game_hash.values.collect do |team|
+    if team == :away
+      team[:players]
+    end
   end
   char_players
 end

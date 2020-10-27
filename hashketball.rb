@@ -206,6 +206,12 @@ def player_stats(player)
 end
 # binding.pry
 
+def get_players_array
+  game_hash.each do |team, team_details|
+    team_details[:players]
+  end
+end
+
 
 def big_shoe_rebounds
   big_shoes_guy = 0

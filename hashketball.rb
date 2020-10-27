@@ -211,7 +211,7 @@ def get_players_array
     team_details[:players]
   end
 end
-# binding.pry
+binding.pry
 
 
 # def big_shoe_rebounds

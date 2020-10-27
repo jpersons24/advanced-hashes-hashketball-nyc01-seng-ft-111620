@@ -136,7 +136,7 @@ def get_all_players
   end
   all_players.flatten
 end
-binding.pry
+# binding.pry
 
 # helper method to find numbers of charlotte hornets players
 def charlotte_numbers

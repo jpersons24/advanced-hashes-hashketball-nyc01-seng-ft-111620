@@ -196,7 +196,7 @@ end
 def player_stats(player)
   game_hash.each do |team, data|
     data.select do |key, value|
-      if value.include? :player_name == player
+      if key.include? :player_name == player
         stat_index = find_index(:player_name == player)
         player_stats = value[stat_index]
       end

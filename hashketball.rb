@@ -136,7 +136,14 @@ def get_all_players
   end
   all_players.flatten
 end
-binding.pry
+# binding.pry
+
+def charlotte_players
+  char_players = game_hash[:away].values.colect do |key, value|
+    key[:players]
+  end
+  char_players
+end
 
 def num_points_scored(player_name)
   get_all_players.each do |player|
@@ -168,6 +175,6 @@ def team_names
   end
 end
 
-def player_numbers(team)
-
+def player_numbers(team_name)
+  
 end

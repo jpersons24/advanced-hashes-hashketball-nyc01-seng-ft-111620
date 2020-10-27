@@ -183,5 +183,9 @@ def team_names
 end
 
 def player_numbers(team_name)
-
+  if team_name == "Brooklyn Nets"
+    brooklyn_numbers
+  elsif team_name == "Charlotte Hornets"
+    charlotte_numbers
+  end
 end

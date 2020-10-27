@@ -189,4 +189,4 @@ def player_numbers(team_name)
     charlotte_numbers
   end
 end
-binding.pry
+# binding.pry

@@ -136,8 +136,9 @@ def get_all_players
   end
   all_players.flatten
 end
-# binding.pry
+binding.pry
 
+# helper method to find numbers of charlotte hornets players
 def charlotte_numbers
   game_hash[:away][:players].collect do |hash|
     hash[:number]
@@ -145,6 +146,7 @@ def charlotte_numbers
 end
 # binding.pry
 
+# helper method to find numbers of brooklyn nets players
 def brooklyn_numbers
   game_hash[:home][:players].collect do |hash|
     hash[:number]
@@ -190,3 +192,5 @@ def player_numbers(team_name)
   end
 end
 # binding.pry
+
+

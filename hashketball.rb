@@ -194,11 +194,10 @@ end
 # binding.pry
 
 def player_stats(player)
-  game_hash.each do |team, data|
-    data.select do |key, value|
-      if key.include?(:player_name == player)
-        stat_index = find_index(:player_name == player)
-        player_stats = value[stat_index]
+  game_hash.each do |team, team_details|
+    team_details[:players].collect do |stats|
+      if stats[:name] == player
+        player_stats = stats
       end
     end
   end

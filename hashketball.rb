@@ -228,3 +228,14 @@ def big_shoe_rebounds
     rebounds
 end
 # binding.pry
+
+def big_shoe_rebounds
+  big_shoe_guy = 0
+  rebounds = 0
+  get_players_array.each do |stats|
+    if stats[:shoe] > big_shoes_guy
+      big_shoes_guy = stats[:shoe]
+      rebounds = stats[:rebounds]
+    end
+  end
+end
